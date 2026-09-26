@@ -1,0 +1,19 @@
+{
+  "name": "stocksense-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "StockSense Modular Inventory Management System",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "build": "npm run build:backend && npm run build:frontend",
+    "db:seed": "cd backend && npm run db:seed",
+    "test:backend": "cd backend && npm run test:e2e",
+    "test:integration": "npx tsx test-integration-e2e.ts"
+  },
+  "keywords": ["inventory", "odoo", "hackathon", "stock-ledger"],
+  "author": "StockSense Team",
+  "license": "MIT"
+}
